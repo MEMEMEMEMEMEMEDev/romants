@@ -2,12 +2,12 @@
   "name": "roman-numbers2",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.tsx",
   "scripts": {
     "test": "npx jest",
     "test:watch": "npx jest --watch",
-    "build": "NODE_ENV=production webpack --config webpack.common.js",
-    "dev": "webpack-dev-server --config webpack.common.js --open"
+    "build": "NODE_ENV=production webpack --config webpack.common.ts",
+    "dev": "webpack-dev-server --config webpack.common.ts --open"
   },
   "devDependencies": {
     "@babel/core": "^7.17.10",
