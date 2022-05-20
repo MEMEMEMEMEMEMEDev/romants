@@ -7,21 +7,21 @@ describe("Pruebas del componente Converter", () => {
     render(<Converter />);
   });
 
-  test("Debe mostrar el botón de convertir", () => {
+  it("Debe mostrar el botón de convertir", () => {
     // Arrange
     const button = screen.getByText("Convert");
     // Act & Assert
     expect(button).toBeInTheDocument();
   });
 
-  test("Debe mostrar el input", () => {
+  it("Debe mostrar el input", () => {
     // Arrange
     const input = screen.getByPlaceholderText("Enter a number");
     // Act & Assert
     expect(input).toBeInTheDocument();
   });
 
-  test("Comprobar resultado", async () => {
+  it("Comprobar resultado", async () => {
     // Arrange
     const input = screen.getByPlaceholderText("Enter a number");
     const button = screen.getByText("Convert");
@@ -32,7 +32,7 @@ describe("Pruebas del componente Converter", () => {
     await screen.findByText("I");
   });
 
-  test("Probar el error", async () => {
+  it("Probar el error", async () => {
     // Arrange
     const input = screen.getByPlaceholderText("Enter a number");
     const button = screen.getByText("Convert");
